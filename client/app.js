@@ -14,7 +14,7 @@ App({
         if (res.code) {
           //发起网络请求
           wx.request({
-            url: `http://localhost:3001/wechat/common/jscode2session`,
+            url: `https://api.qsmttech.cn/wechat/common/jscode2session`,
             data: {
               code: res.code,
               appid: 'wx8160814f8957a587'
