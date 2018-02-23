@@ -4,7 +4,7 @@ var common = require('./common');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-    res.send('respond from wechat');
+    res.send('respond from /wechat');
 });
 
 router.use('/common', common);

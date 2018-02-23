@@ -5,7 +5,7 @@ var request = require('request');
 // parent is `/wechat/common`
 
 router.get('/', function(req, res, next) {
-    res.send('/common');
+    res.send('respond from /common');
 });
 
 router.get('/jscode2session', function(req, res, next) {
