@@ -14,10 +14,10 @@ router.get('/jscode2session', function(req, res, next) {
         if(app) {
             request(`https://api.weixin.qq.com/sns/jscode2session?appid=wx8160814f8957a587&secret=${app.secret}&js_code=${req.query.code}&grant_type=authorization_code`).pipe(res);
         } else {
-            res.json('appid wrong');
+            res.send('appid wrong');
         }
     }else {
-        res.json('no code or appid');
+        res.send('no code or appid');
     }
 });
 
